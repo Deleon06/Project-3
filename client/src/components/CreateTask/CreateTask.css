@@ -1,0 +1,14 @@
+label { font-family: 'Patrick Hand', cursive; }
+
+.createtask-wrapper {
+  text-align: center;
+  margin: 10px auto;
+  padding: 0 10px;
+  margin-top:290px;
+  padding:60px 0;
+}
+
+.createTask-form {
+  position: absolute;
+  left: 215px;
+}

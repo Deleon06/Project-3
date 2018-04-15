@@ -1,0 +1,35 @@
+{
+  "name": "project-3",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000/",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^2.0.0",
+    "bootstrap": "^4.1.0",
+    "express": "^4.16.3",
+    "foreman": "^2.0.0",
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3",
+    "react": "^16.3.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^5.0.0-beta.3",
+    "yarn": "^1.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "client": "cd client && yarn start & npm run watch-css",
+    "watch-css": "node-sass -w --source-map true src/styles/scss/ -o src/styles/css/",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
